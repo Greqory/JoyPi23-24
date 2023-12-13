@@ -22,6 +22,7 @@ import adafruit_character_lcd.character_lcd_i2c as character_lcd
 
 from adafruit_ht16k33.segments import Seg7x4
 
+
 # Definiere LCD Zeilen und Spaltenanzahl.
 lcd_columns = 16
 lcd_rows    = 2
