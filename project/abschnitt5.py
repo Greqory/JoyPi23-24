@@ -155,7 +155,7 @@ def main(cascaded, block_orientation, rotate):
             segment.fill(0)
 
             # Ausgabe Luftfeuchtigkeit auf 7-Segment-Anzeige
-            segment.print(str(int(result.humidity))+' ')
+            segment.print(str(int(result.humidity))+'F')
             segment.show()
             
             # Verzögerung von 2s
