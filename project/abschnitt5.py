@@ -122,10 +122,10 @@ def main(cascaded, block_orientation, rotate):
                 result = instance.read()
 
             # Symbolausgabe mit ausgelesenen Lichtwerten als Bedingung
-            if sensor.readLight() >= 30000 and sensor.readLight() <= 50000:
+            if sensor.readLight() >= 700 and sensor.readLight() <= 50000:
                 with canvas(device) as draw:
                     draw.point(tuple(out_richtigHaken), fill="yellow")
-            if sensor.readLight() < 30000:
+            if sensor.readLight() < 700:
                 with canvas(device) as draw:
                     draw.point(tuple(out_pfeilHoch), fill="yellow")
             if sensor.readLight() > 50000:
